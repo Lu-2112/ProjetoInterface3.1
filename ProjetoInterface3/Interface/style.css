@@ -1,0 +1,189 @@
+/* Fontes*/
+body {
+    height: 100%;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    font-family: Impact, 'Haettenschweiler', 'Arial Narrow Bold', sans-serif;
+    background-color: rgb(165, 224, 204);
+    border: rgb(46, 7, 7) solid 4px;
+    box-sizing: border-box;
+  }
+#bodyindex {
+    background-color: rgb(28, 116, 86);  
+}
+main {
+    flex: 1;
+}
+p {
+    text-align: center;
+}
+h2 {
+    background-color: rgb(144, 104, 185);
+    text-align: right;
+}
+table {
+    border: 10px solid black;
+}
+.formulario {
+    background-color: #fce4ec;
+    padding: 40px;
+    font-family: fantasy;
+}
+      
+.titulo-formulario {
+    color: purple;
+    text-align: center;
+}
+      
+.campo-formulario {
+    width: 300px;
+    padding: 8px;
+}
+      
+.botao-formulario {
+    background-color: purple;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-top: 10px;
+    cursor: pointer;
+    }
+#bodymenu {
+    background-color: rgb(181, 228, 232);
+    padding: 15px;
+    font-family: "Winky Sans", sans-serif;
+}
+    
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+    border: 2px solid black;
+    padding: 0;
+}
+    
+.menu li {
+    position: relative;
+    border-right: 2px solid rgb(121, 87, 87);
+}
+    
+.menu li:last-child {
+    border-right: none;
+}
+    
+.menu li a {
+    color: purple;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    transition: all 0.3s ease;
+}
+    
+.menu li a:hover {
+    background: black;
+    color: aquamarine;
+    box-shadow: 3px 8px wheat;
+    text-shadow: 0px 0px 5px rebeccapurple;
+}
+    
+.menu li ul {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background-color: black;
+    display: none;
+    z-index: 10;
+}
+    
+.menu li:hover ul {
+    display: block;
+}
+
+.menu li ul li {
+    width: 120px;
+    border: 1px solid rgb(0, 0, 0);
+    display: block;
+}
+footer {
+    background-color: #1f1f1f;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+.rodape {
+    background-color: #000;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 0.85rem;
+    margin-top: auto; /* empurra para o final */
+    width: 100%;
+}
+    
+.rodape a {
+    text-decoration: none;
+    color: white;
+    margin-bottom: 5px;
+    transition: color 0.3s ease;
+}
+    
+.rodape a:hover {
+    color: aquamarine;
+}
+    
+.rodape p {
+    margin-bottom: 10px;
+}
+    
+.rodape-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+  }
+    
+.rodape-div-1, .rodape-div-2, .rodape-div-3, .rodape-div-4 {
+    flex: 1 1 22%;
+    min-width: 200px;
+}
+    
+.rodape span {
+    font-size: 1rem;
+    color: bisque;
+}
+    
+.rodape-direitos {
+    background-color: rgb(162, 101, 9);
+    text-align: center;
+    padding: 15px;
+    font-weight: bold;
+}
+@media (max-width: 768px) {
+.menu {
+    flex-direction: column;
+    align-items: flex-start;
+    }
+    
+.rodape-div {
+    flex-direction: column;
+    gap: 15px;
+    }
+    
+.rodape-div-1, .rodape-div-2, .rodape-div-3, .rodape-div-4 {
+    flex: 1 1 100%;
+    }
+}
+.index-pagina1 {
+    background-color: rgb(238, 179, 189);
+}
+.index-pagina2 {
+    background-color: rgb(232, 232, 239);
+}
+.tabela {
+    background-color: rgb(212, 199, 223);
+}
+.Computadores {
+    background-color: rgb(153, 221, 224);
+}
+   

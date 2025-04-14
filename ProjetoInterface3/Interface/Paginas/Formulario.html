@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário</title>
+  <link rel="StyleSheet" type="text/css" href="../style.css"/>
+  <!--Favicon-->
+  <link rel="icon" type="image/png" href="../Imagens/favorite_24dp_000000_FILL0_wght400_GRAD0_opsz24.png"/>
+</head>
+<body id="Formulario"></body>
+<!--Âncora-->
+<h2 id="Secao5"></h2>
+<body>
+    <!--Formulário-->
+  <h1>Formulário de Cadastro 📝</h1>
+  <form action="/enviar" method="post">
+    
+    <fieldset>
+      <legend>Informações Pessoais</legend>
+      
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" required><br><br>
+      <label for="telefone">Telefone</label>
+      <input type="text" id="telefone" name="telefone" required><br><br>
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" required><br><br>
+      
+      <label for="idade">Idade:</label>
+      <input type="number" id="idade" name="idade" min="0" required><br><br>
+
+      <label for="data">Data de nascimento:</label>
+      <input type="date" id="data" name="data_nasc"><br><br>
+    </fieldset>
+
+    <fieldset>
+      <legend>Gênero</legend>
+      <input type="radio" id="masculino" name="genero" value="masculino" required>
+      <label for="masculino">Masculino</label><br>
+
+      <input type="radio" id="feminino" name="genero" value="feminino">
+      <label for="feminino">Feminino</label><br>
+
+      <input type="radio" id="outro" name="genero" value="outro">
+      <label for="outro">Outro</label><br>
+    </fieldset>
+
+    <fieldset>
+      <legend>Preferências de Contato</legend>
+
+      <input type="checkbox" id="email_contato" name="contato[]" value="email" required>
+      <label for="email_contato">E-mail</label><br>
+
+      <input type="checkbox" id="telefone_contato" name="contato[]" value="telefone">
+      <label for="telefone_contato">Telefone</label><br>
+
+      <input type="checkbox" id="sms_contato" name="contato[]" value="sms">
+      <label for="sms_contato">SMS</label><br>
+    </fieldset>
+
+    <fieldset>
+      <legend>Informações Adicionais</legend>
+
+      <label for="estado">Estado:</label>
+      <select id="estado" name="estado">
+        <option value="sp">São Paulo</option>
+        <option value="rj">Rio de Janeiro</option>
+        <option value="mg">Minas Gerais</option>
+        <option value="rs">Distrito Federal</option>
+      </select><br><br>
+
+      <label for="mensagem">Mensagem:</label><br>
+      <textarea id="mensagem" name="mensagem" rows="4" cols="40" placeholder="Escreva aqui..."></textarea><br><br>
+
+      <label for="arquivo">Anexar documento:</label>
+      <input type="file" id="arquivo" name="arquivo"><br><br>
+
+      <label for="senha">Senha:</label>
+      <input type="password" id="senha" name="senha" required><br><br>
+    </fieldset>
+
+    <input type="reset" value="Limpar">
+    <input type="submit" value="Enviar">
+
+  </form>
+
+  <!--âncora-->
+<a href="#Secao5">Acesse o topo da página</a>
+</body>
+</html>
